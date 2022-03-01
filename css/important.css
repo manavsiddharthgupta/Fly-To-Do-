@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  /* Navigation bar */
+.navigation-bar{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0em 1em;
+    background-color: #171717;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+}
+.nav-bar-content{
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 0.45rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left: 2em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+/* .content{
+    display: inline-block;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    height: 100%;
+    padding: 0.8em 1em 0em 1em;
+    margin-left: 0.5em;
+    letter-spacing: 1px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+.content:hover{
+    background-color: rgba(0, 0, 0, 0.527);
+    border-bottom: 2px solid whitesmoke;
+} */
+
+.logo-gif{
+    height: 100%;
+}
+
+.main-box{
+    position: relative;
+}
+.side-bar{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 170px;
+    height: 100vh;
+    padding-top: 3rem;
+    background-color: #171717;
+    z-index: 98;
+}
+.user-profile{
+    margin-right: 0.2em;
+    height: 4em;
+    border: 1px solid white;
+}
+.side-bar-content{
+    margin-top: 3em;
+}
+.side-bar-content a{
+    margin-left: 0.2em;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    width: 98.3%;
+    padding: 1.5em 0em;
+}
+.side-bar-content a:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.side-bar-content a.importantbar{
+    background-color: rgba(255, 255, 255, 0.075);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-left: 5px solid #32CBF1;
+    border-right: 2px solid rgba(255, 255, 255, 0);
+    color: #32CBF1;
+}
+.side-bar li a img{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 18px;
+}
+
+
+/* important */
+.important{
+    height: 100vh;
+    background-color: #171716fb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-left: 170px;
+}
+.titleofpage-important{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+    height: 2em;
+    display: flex;
+}
+.titlepagelogo{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+    align-self: center;
+}
+.titleofpage-important h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    color: white;
+}
+.important-content{
+    max-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    padding: 2em;
+    border-radius: 15px;
+    position: relative;
+}
+.important-content h3{
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* .dayimg-sun{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+} */
+.bookmarkimg{
+    position: absolute;
+    top: 15%;
+    right:38%;
+}
+.important-content p{
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+.add-task{
+    position: absolute;
+    top: 58.20%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+    height: 3em;
+    position: relative;
+}
+.add-task input{
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 4em;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+}
+.add-task button{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 0.25em;
+    border-radius: 30px;
+    border: none;
+    width: 3em;
+    height: 3em;
+    top: 7%;
+    left: 0%;
+    transform: translate(10%,0%);
+}
+.add-task img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+input:focus{
+    background-color: rgba(0, 0, 0, 0.158);
+    backdrop-filter: blur(20px);
+    outline: none;
+}
+.add-task:focus-within .plus-sign{
+    content: url(images/icons8-circle-48.png);
+}
+input:hover{
+    background-color: rgba(0, 0, 0, 0.136);
+    backdrop-filter: blur(20px);
+}
+.todolist{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 25em;
+    display: none;
+}
+.todolist li{
+    display: block;
+    height: 1em;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0.3em;
+    border-radius: 20px;
+    color: white;
+}
