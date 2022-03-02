@@ -184,7 +184,7 @@
     align-self: flex-start;
     color: white;
 }
-.add-task input{
+/* .add-task input{
     width: 100%;
     height: 100%;
     padding: 0.5em 4em;
@@ -247,4 +247,4 @@ input:hover{
     margin-bottom: 0.3em;
     border-radius: 20px;
     color: white;
-}
+} */
