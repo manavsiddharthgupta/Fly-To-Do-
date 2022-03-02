@@ -7,21 +7,21 @@
 // console.log(link1);
 // link1.style.backgroundColor = "black";
 // link1.style.border = "2px solid whitesmoke"
-  // you can select all element of same class name
+//   you can select all element of same class name
 
 
-  //1 by get element method
+//   1 by get element method
 // let contenta = document.getElementsByTagName("a");
 // console.log(contenta);          // all element is stored in HTML collection 
 
 
 // you can iterate
-//1 for loop 
+// 1 for loop 
 
 // for( let i = 0; i < content.length; i++){
 //     content[i].style.color = "yellow"
 // }
-//2 for of
+// 2 for of
 
 // for (const con of content) {
 //     con.style.color = "green";
@@ -39,13 +39,13 @@
 // console.log(content);
 // you can iterate using all three 
 // you can change node list in arrays.
-//-------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 // INNER HTMl---
 // const mydaycondiv = document.querySelector(".my-day-content p"); 
 // mydaycondiv.innerHTML += "<button class= \"btn\" >learn more</button>";
 
-//--------------------------------------IMPORTANT-----------------------------------------------------
+// --------------------------------------IMPORTANT-----------------------------------------------------
 // create element, remove append , prepend , after, before
 
 // const listtext1 = document.createElement("li");
@@ -63,24 +63,24 @@
 // const random = document.querySelector(".todolist li");
 // console.log(random);
 // random.remove();
-//-------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 // clone using clonemethod.---check out mdm refernce
-//-------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 // static list vs live list
 // static list --- queryselctor (in node list) vs live list --- getelement (in HTML list).
 // in static list if we add nodes using javaScript it will view in node list but if we use get elements it stored in HTML collection and it will viewed the added element this is called live list.
 // but usually we use query selctoe to select element
 
-//-------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 // how to get dimension of element."
 // const mydayContent = document.querySelector(".my-day-content");
 // const info = mydayContent.getBoundingClientRect().width;
 // console.log(info);
 
-//--------------------------------------IMPORTANT---------------------------------------------------------
+// --------------------------------------IMPORTANT---------------------------------------------------------
  
 // INTRO TO EVENTS
 // click
@@ -96,11 +96,11 @@
 
 // 3.----Important 
 
-  // btn1.addEventListener("click", ()=>{
-  //   console.log('you clicked me');
-  // })
+//   btn1.addEventListener("click", ()=>{
+//     console.log('you clicked me');
+//   })
 
-//------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
 
 // this keyword inside event listener
 
@@ -113,7 +113,7 @@
 //   console.log(this);   // this keyword print button object because we are using function function.
 // })
 
-//-------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 // click event on multiple button
 // using loop
 

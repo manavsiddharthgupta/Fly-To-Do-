@@ -267,8 +267,10 @@ input:hover{
 .todobtn{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+    border-radius: 24px;
     border: none;
     width: 28px;
+    max-height: 28px;
     margin-left: 0.5em;
     height: fit-content;
 }

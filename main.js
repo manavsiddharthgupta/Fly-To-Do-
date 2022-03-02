@@ -15,7 +15,7 @@ btnToaddToDoList.addEventListener('submit',(e)=>{
                     <button class="todobtn remove"><img class="remove" src="/Fly -to do list/images/icons8-trash-can-48.png" alt=""></button>
                 </div>`
         listOfEveryInput.innerHTML = innerHtmlofList;
-        allTo_do_list.append(listOfEveryInput);
+        allTo_do_list.prepend(listOfEveryInput);
         inputfield.value = "";
     }
    
@@ -23,8 +23,16 @@ btnToaddToDoList.addEventListener('submit',(e)=>{
 allTo_do_list.addEventListener('click',(e)=>{
     e.preventDefault();
     if (e.target.classList.contains("check")) {
+        const imageurl = e.target;
+        imageurl.style.content = "url('images/icons8-circle-48 (1).png')";
         const textvalueOfToDo = e.target.parentNode.parentNode.previousElementSibling;
-        textvalueOfToDo.style.textDecoration = "line-through"
+        textvalueOfToDo.style.textDecoration = "line-through";
+        textvalueOfToDo.style.color = "#696969"
+        const doneitem = e.target.parentNode.parentNode.parentNode;
+        const toremoveditemfromdone = doneitem;
+        doneitem.remove();
+        allTo_do_list.append(toremoveditemfromdone);
+        
     }
     if (e.target.classList.contains("remove")) {
         const doneToDo = e.target.parentNode.parentNode.parentNode;
@@ -35,6 +43,3 @@ allTo_do_list.addEventListener('click',(e)=>{
     }
 })
 
-const rootnode = document.getRootNode();
-const htmlnode = rootnode.childNodes[1];
-console.log(htmlnode.childNodes[2].childNodes[3].childNodes);
