@@ -5,11 +5,25 @@
     margin: 0;
     box-sizing: border-box;
 }
-.body{
+
+body{
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
 }
+img {   
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
   /* Navigation bar */
 .navigation-bar{
     width: 100%;
@@ -234,7 +248,7 @@ input:hover{
     background-color: rgba(0, 0, 0, 0.438);
     backdrop-filter: blur(20px);
 }
-.to-do-list{
+.all-to-do-list{
     position: absolute;
     top: 16%;
     left: 50%;
@@ -243,7 +257,7 @@ input:hover{
     max-height: 25em;
     overflow-y: scroll;
 }
-.to-do-list::-webkit-scrollbar{
+.all-to-do-list::-webkit-scrollbar{
     display: none;
 }
 .to-do-list li{
@@ -253,17 +267,20 @@ input:hover{
     width: 100%;
     padding: 0.8rem;
     padding-left: 1.2em;
-    background-color: rgba(0, 0, 0, 0.842);
+    background-color: rgba(0, 0, 0, 0.812);
     font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 0.4em;
     border-radius: 20px;
     color: white;
 }
+
 .todobtn img{
     width: 28px;
     height: 28px;
     padding-top: 2px;
+    transition: all 0.2s ease-in-out;
 }
+
 .todobtn{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
@@ -274,6 +291,25 @@ input:hover{
     margin-left: 0.5em;
     height: fit-content;
 }
+.todobtn .check:hover{
+    transform: scale(1.2);
+}
+.todobtn .remove:hover{
+    transform: scale(1.2);
+}
 .btns-of-Every-List{
     min-width: 75px;
+}
+.checked-to-do-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem;
+    padding-left: 1.2em;
+    background-color: rgba(0, 0, 0, 0.812);
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 0.4em;
+    border-radius: 20px;
+    color: white;
 }

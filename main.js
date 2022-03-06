@@ -1,7 +1,9 @@
 const btnToaddToDoList = document.querySelector(".form-to-do");
 const inputfield = document.querySelector(".form-to-do  input[type='text']")
-const allTo_do_list = document.querySelector(".to-do-list");
-const myDayPreviousContent = document.querySelector(".my-day-content");
+const to_do_list = document.querySelector(".to-do-list");
+const allTo_do_list = document.querySelector(".all-to-do-list");
+const myDayPreviousContent = document.querySelector(".temprorary-content");
+const allCheckedTodoList = document.querySelector(".checked-to-do-list");
 btnToaddToDoList.addEventListener('submit',(e)=>{
     e.preventDefault();
     const inputText = inputfield.value;
@@ -15,7 +17,7 @@ btnToaddToDoList.addEventListener('submit',(e)=>{
                     <button class="todobtn remove"><img class="remove" src="/Fly -to do list/images/icons8-trash-can-48.png" alt=""></button>
                 </div>`
         listOfEveryInput.innerHTML = innerHtmlofList;
-        allTo_do_list.prepend(listOfEveryInput);
+        to_do_list.append(listOfEveryInput);
         inputfield.value = "";
     }
    
@@ -28,16 +30,20 @@ allTo_do_list.addEventListener('click',(e)=>{
         const textvalueOfToDo = e.target.parentNode.parentNode.previousElementSibling;
         textvalueOfToDo.style.textDecoration = "line-through";
         textvalueOfToDo.style.color = "#696969"
-        const doneitem = e.target.parentNode.parentNode.parentNode;
-        const toremoveditemfromdone = doneitem;
-        doneitem.remove();
-        allTo_do_list.append(toremoveditemfromdone);
+        if (true) {
+            const doneitem = e.target.parentNode.parentNode.parentNode;
+            const toremoveditemfromdone = doneitem;
+            doneitem.remove();
+            allCheckedTodoList.append(toremoveditemfromdone);
+            const checkRemoved = e.target;
+            checkRemoved.classList.remove('check');
+        }
         
     }
     if (e.target.classList.contains("remove")) {
         const doneToDo = e.target.parentNode.parentNode.parentNode;
         doneToDo.remove()
-        if (allTo_do_list.childElementCount == 0) {
+        if (to_do_list.childElementCount == 0 && allCheckedTodoList.childElementCount == 0) {
             myDayPreviousContent.style.display = "block";
         }
     }
