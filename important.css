@@ -5,11 +5,24 @@
     margin: 0;
     box-sizing: border-box;
 }
-.body{
+body{
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
 }
+img {   
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
   /* Navigation bar */
 .navigation-bar{
     width: 100%;
@@ -132,11 +145,10 @@
 }
 .titleofpage-important h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 400;
     align-self: flex-start;
-    color: white;
+    color: #32CBF1;
 }
 .important-content{
     max-width: 300px;
@@ -172,7 +184,7 @@
     letter-spacing: 1px;
     margin-top: 1em;
 }
-.add-task{
+.form-to-do{
     position: absolute;
     top: 88.20%;
     left: 50%;
@@ -181,7 +193,7 @@
     height: 3em;
     position: relative;
 }
-.add-task input{
+.form-to-do input{
     width: 100%;
     height: 100%;
     padding: 0.5em 4em;
@@ -192,7 +204,7 @@
     border: none;
     border-radius: 5px;
 }
-.add-task button{
+.form-to-do button{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.438);
     padding: 0.25em;
@@ -204,7 +216,7 @@
     left: 0%;
     transform: translate(10%,0%);
 }
-.add-task img{
+.form-to-do img{
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -214,35 +226,79 @@
     opacity: 1; 
 }
 input:focus{
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(20px);
     outline: none;
 }
-.add-task:focus-within .plus-sign{
+.form-to-do:focus-within .plus-sign{
     content: url(images/icons8-circle-48.png);
 }
 input:hover{
-    background-color: rgba(0, 0, 0, 0.136);
+    background-color: rgba(0, 0, 0, 0.295);
     backdrop-filter: blur(20px);
 }
-.todolist{
+.all-to-do-list{
     position: absolute;
     top: 16%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 25em;
+    max-height: 25em;
+    overflow-y: scroll;
+}
+.all-to-do-list::-webkit-scrollbar{
     display: none;
 }
-.todolist li{
-    display: block;
-    height: 1em;
+.to-do-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.842);
+    padding: 0.8rem;
+    padding-left: 1.2em;
+    background-color: rgba(0, 0, 0, 0.812);
     font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.4em;
+    border-radius: 20px;
+    color: white;
+}
+
+.todobtn img{
+    width: 28px;
+    height: 28px;
+    padding-top: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.todobtn{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 24px;
+    border: none;
+    width: 28px;
+    max-height: 28px;
+    margin-left: 0.5em;
+    height: fit-content;
+}
+.todobtn .check:hover{
+    transform: scale(1.2);
+}
+.todobtn .remove:hover{
+    transform: scale(1.2);
+}
+.btns-of-Every-List{
+    min-width: 75px;
+}
+.checked-to-do-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem;
+    padding-left: 1.2em;
+    background-color: rgba(0, 0, 0, 0.812);
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 0.4em;
     border-radius: 20px;
     color: white;
 }

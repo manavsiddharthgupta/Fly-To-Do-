@@ -127,17 +127,6 @@
     border-radius: 15px;
     position: relative;
 }
-.notes-content h3{
-    font-size: 1.4em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-/* .dayimg-sun{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-} */
 .bookmarkimg{
     position: absolute;
     top: 10%;
@@ -169,20 +158,20 @@
     width: 80%;
     height: 2em;
     display: flex;
+    margin-left: 1em;
 }
 .titlepagelogo{
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-right: 1rem;
     align-self: center;
 }
 .titleofpage-notes h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 400;
     align-self: flex-start;
-    color: white;
+    color: #32CBF1;;
 }
 /* .add-task input{
     width: 100%;
@@ -248,3 +237,60 @@ input:hover{
     border-radius: 20px;
     color: white;
 } */
+.Notes-app{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 190px);
+    width: 80%;
+    /* background-color: aliceblue; */
+    height: 75%;
+    padding: 16px;
+    gap: 16px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+.Notes-app::-webkit-scrollbar{
+    display: none;
+}
+.sticky-notes{
+    height: 190px;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    outline-color: #32CBF1;
+    border-radius: 12px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.17);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white;
+    background-color: black;
+    overflow-y: scroll;
+    transition: all 0.4s ease-in-out;
+}
+.sticky-notes::-webkit-scrollbar{
+    display: none;
+}
+.sticky-notes:hover{
+    transform: scale(1.12);
+}
+.add-note-button{
+    height: 190px;
+    border-radius: 12px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.17);
+    border: none;
+    outline: none;
+    font-size: 8em;
+    background: rgba(0, 0, 0, 0.24);
+    color: #32cbf18e;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.add-note-button:hover{
+    background: rgba(0, 0, 0, 0.87);
+    color: #32CBF1;
+    font-size: 10em;
+}
