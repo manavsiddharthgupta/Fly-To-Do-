@@ -9,8 +9,8 @@ const createtodo = (takeTextFromInput)=>{
     const listOfEveryInput = document.createElement("li");
     const innerHtmlofList = `<span>${takeTextFromInput}</span>
              <div class="btns-of-Every-List">
-                <button class="todobtn check"><img class="check" src="/Fly -to do list/images/icons8-circle-48.png" alt=""></button>
-                <button class="todobtn remove"><img class="remove" src="/Fly -to do list/images/icons8-trash-can-48.png" alt=""></button>
+                <button class="todobtn check"><img class="check" src="./images/icons8-circle-48.png" alt=""></button>
+                <button class="todobtn remove"><img class="remove" src="./images/icons8-trash-can-48.png" alt=""></button>
             </div>`
     listOfEveryInput.innerHTML = innerHtmlofList;
     to_do_list.append(listOfEveryInput);
@@ -150,12 +150,12 @@ hamburgerMenu.addEventListener('click',()=>{
     const hamimg = hamburgerMenu.childNodes[1];
     if(hamimg.classList.contains("closed")){
         hamimg.classList.remove("closed");
-        hamimg.src = "http://127.0.0.1:5500/Fly%20-to%20do%20list/images/icons8-close.svg";
+        hamimg.src = "./images/icons8-close.svg";
         sidebarforeHamburger.classList.add("side-bar-forSmallWidth");
         console.log(sidebarforeHamburger.classList);
     } else {
         hamimg.classList.add("closed");
-        hamimg.src = "http://127.0.0.1:5500/Fly%20-to%20do%20list/images/icons8-hamburger-menu%20(1).svg";
+        hamimg.src = "./images/icons8-hamburger-menu (1).svg";
         sidebarforeHamburger.classList.remove("side-bar-forSmallWidth");
         console.log(sidebarforeHamburger.classList);
     }

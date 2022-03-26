@@ -9,8 +9,8 @@ const createtodo = (takeTextFromInput)=>{
     const listOfEveryInput = document.createElement("li");
     const innerHtmlofList = `<span>${takeTextFromInput}</span>
              <div class="btns-of-Every-List">
-                <button class="todobtn check"><img class="check" src="/Fly -to do list/images/icons8-circle-48.png" alt=""></button>
-                <button class="todobtn remove"><img class="remove" src="/Fly -to do list/images/icons8-trash-can-48.png" alt=""></button>
+                <button class="todobtn check"><img class="check" src="./images/icons8-circle-48.png" alt=""></button>
+                <button class="todobtn remove"><img class="remove" src="./images/icons8-trash-can-48.png" alt=""></button>
             </div>`
     listOfEveryInput.innerHTML = innerHtmlofList;
     to_do_list.append(listOfEveryInput);
