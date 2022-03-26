@@ -1,90 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.body{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-}
-  /* Navigation bar */
-.navigation-bar{
-    width: 100%;
-    height: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0em 1em;
-    background-color: #171717;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 99;
-}
-.nav-bar-content{
-    color: white;
-    font-size: 0.9rem;
-    padding-top: 0.45rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    margin-left: 2em;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-}
-/* .content{
-    display: inline-block;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    height: 100%;
-    padding: 0.8em 1em 0em 1em;
-    margin-left: 0.5em;
-    letter-spacing: 1px;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
-}
-.content:hover{
-    background-color: rgba(0, 0, 0, 0.527);
-    border-bottom: 2px solid whitesmoke;
-} */
 
-.logo-gif{
-    height: 100%;
-}
 
-.main-box{
-    position: relative;
-}
-.side-bar{
-    position: fixed;
-    top:0%;
-    left: 0%;
-    width: 170px;
-    height: 100vh;
-    padding-top: 3rem;
-    background-color: #171717;
-    z-index: 98;
-}
-.user-profile{
-    margin-right: 0.2em;
-    height: 4em;
-    border: 1px solid white;
-}
-.side-bar-content{
-    margin-top: 3em;
-}
-.side-bar-content a{
-    margin-left: 0.2em;
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    width: 98.3%;
-    padding: 1.5em 0em;
-}
 .side-bar-content a:hover{
     background-color: rgba(255, 255, 255, 0.075);
     border-top-left-radius: 20px;
@@ -113,7 +28,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-left: 170px;
+    margin-left: 200px;
 }
 .notes-content{
     max-width: 300px;
@@ -152,91 +67,30 @@
 }
 .titleofpage-notes{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,0%);
     width: 80%;
     height: 2em;
     display: flex;
     margin-left: 1em;
+    align-items: center;
 }
 .titlepagelogo{
     width: 1.3rem;
     height: 1.3rem;
     margin-right: 1rem;
-    align-self: center;
 }
 .titleofpage-notes h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 100%;
+    padding-top: 3px;
+    letter-spacing: 1px;
     align-self: flex-start;
     color: #32CBF1;;
 }
-/* .add-task input{
-    width: 100%;
-    height: 100%;
-    padding: 0.5em 4em;
-    background-color: rgba(0, 0, 0, 0.692);
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-    border: none;
-    border-radius: 5px;
-}
-.add-task button{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.438);
-    padding: 0.25em;
-    border-radius: 30px;
-    border: none;
-    width: 3em;
-    height: 3em;
-    top: 7%;
-    left: 0%;
-    transform: translate(10%,0%);
-}
-.add-task img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
-::placeholder {
-    color: white;
-    opacity: 1; 
-}
-input:focus{
-    background-color: rgba(0, 0, 0, 0.158);
-    backdrop-filter: blur(20px);
-    outline: none;
-}
-.add-task:focus-within .plus-sign{
-    content: url(images/icons8-circle-48.png);
-}
-input:hover{
-    background-color: rgba(0, 0, 0, 0.136);
-    backdrop-filter: blur(20px);
-}
-.todolist{
-    position: absolute;
-    top: 16%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 25em;
-    display: none;
-}
-.todolist li{
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.842);
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 0.3em;
-    border-radius: 20px;
-    color: white;
-} */
 .Notes-app{
     position: absolute;
     top: 18%;
@@ -245,7 +99,6 @@ input:hover{
     display: grid;
     grid-template-columns: repeat(auto-fill, 190px);
     width: 80%;
-    /* background-color: aliceblue; */
     height: 75%;
     padding: 16px;
     gap: 16px;
@@ -274,7 +127,8 @@ input:hover{
 .sticky-notes::-webkit-scrollbar{
     display: none;
 }
-.sticky-notes:hover{
+
+.sticky-notes:focus{
     transform: scale(1.12);
 }
 .add-note-button{
@@ -294,3 +148,11 @@ input:hover{
     color: #32CBF1;
     font-size: 10em;
 }
+@media (max-width: 700px){
+    .side-bar{
+        display: none;
+    }
+    .notes {
+      margin-left: 0px;
+    }
+  }

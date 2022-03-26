@@ -1,103 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;  
-}
-img {   
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
- }
-  /* Navigation bar */
-.navigation-bar{
-    width: 100%;
-    height: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0em 1em;
-    background-color: #171717;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 99;
-}
-.nav-bar-content{
-    color: white;
-    font-size: 0.9rem;
-    padding-top: 0.45rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    margin-left: 2em;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-}
-/* .content{
-    display: inline-block;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    height: 100%;
-    padding: 0.8em 1em 0em 1em;
-    margin-left: 0.5em;
-    letter-spacing: 1px;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
-}
-.content:hover{
-    background-color: rgba(0, 0, 0, 0.527);
-    border-bottom: 2px solid whitesmoke;
-} */
 
-.logo-gif{
-    height: 100%;
-}
-
-.main-box{
-    position: relative;
-}
-.side-bar{
-    position: fixed;
-    top:0%;
-    left: 0%;
-    width: 170px;
-    height: 100vh;
-    padding-top: 3rem;
-    background-color: #171717;
-    z-index: 98;
-}
-.user-profile{
-    margin-right: 0.2em;
-    height: 4em;
-    border: 1px solid white;
-}
-.side-bar-content{
-    margin-top: 3em;
-}
-.side-bar-content a{
-    margin-left: 0.2em;
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    width: 98.3%;
-    padding: 1.5em 0em;
-}
 .side-bar-content a:hover{
     background-color: rgba(255, 255, 255, 0.075);
     border-top-left-radius: 20px;
@@ -111,13 +12,6 @@ img {
     border-right: 2px solid rgba(255, 255, 255, 0);
     color: #32CBF1;
 }
-.side-bar li a img{
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-    width: 18px;
-}
-
-
 /* important */
 .important{
     height: 100vh;
@@ -126,16 +20,17 @@ img {
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-left: 170px;
+    margin-left: 200px;
 }
 .titleofpage-important{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,0%);
     width: 80%;
     height: 2em;
     display: flex;
+    align-items: center;
 }
 .titlepagelogo{
     width: 1.6rem;
@@ -144,9 +39,12 @@ img {
     align-self: center;
 }
 .titleofpage-important h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 100%;
+    padding-top: 3px;
+    letter-spacing: 1px;
     align-self: flex-start;
     color: #32CBF1;
 }
@@ -167,11 +65,7 @@ img {
     font-weight: 600;
     letter-spacing: 1px;
 }
-/* .dayimg-sun{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-} */
+
 .bookmarkimg{
     position: absolute;
     top: 15%;
@@ -184,7 +78,7 @@ img {
     letter-spacing: 1px;
     margin-top: 1em;
 }
-.form-to-do{
+.form-to-do-imp{
     position: absolute;
     top: 88.20%;
     left: 50%;
@@ -193,7 +87,7 @@ img {
     height: 3em;
     position: relative;
 }
-.form-to-do input{
+.form-to-do-imp input{
     width: 100%;
     height: 100%;
     padding: 0.5em 4em;
@@ -204,7 +98,7 @@ img {
     border: none;
     border-radius: 5px;
 }
-.form-to-do button{
+.form-to-do-imp button{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.438);
     padding: 0.25em;
@@ -216,7 +110,7 @@ img {
     left: 0%;
     transform: translate(10%,0%);
 }
-.form-to-do img{
+.form-to-do-imp img{
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -230,26 +124,26 @@ input:focus{
     backdrop-filter: blur(20px);
     outline: none;
 }
-.form-to-do:focus-within .plus-sign{
+.form-to-do-imp:focus-within .plus-sign{
     content: url(images/icons8-circle-48.png);
 }
 input:hover{
     background-color: rgba(0, 0, 0, 0.295);
     backdrop-filter: blur(20px);
 }
-.all-to-do-list{
+.all-to-do-list-imp{
     position: absolute;
-    top: 16%;
+    top: 17%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 25em;
+    max-height: 69%;
     overflow-y: scroll;
 }
-.all-to-do-list::-webkit-scrollbar{
+.all-to-do-list-imp::-webkit-scrollbar{
     display: none;
 }
-.to-do-list li{
+.to-do-list-imp li{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,7 +183,7 @@ input:hover{
 .btns-of-Every-List{
     min-width: 75px;
 }
-.checked-to-do-list li{
+.checked-to-do-list-imp li{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,3 +196,11 @@ input:hover{
     border-radius: 20px;
     color: white;
 }
+@media (max-width: 700px){
+    .side-bar{
+        display: none;
+    }
+    .important {
+      margin-left: 0px;
+    }
+  }
