@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+img.logo-gif {   
+    width: 2em;
+    height: 2em;
+    margin-top: 0.4em;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
+
+
+  /* -----------------Navigation bar---------------------- */
+.navigation-bar{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0em 1em;
+    background-color: #171717;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+    display: flex;
+}
+.nav-bar-content{
+    color: white;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+.logo-img{
+    height: 100%;
+}
+.hamburger-menu{
+    width: 45px;
+    height: 40px;
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.hamburger-menu img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -----------------------Main Box-------------------------------------- */
+.main-box{
+    position: relative;
+}
+
+
+/* ----------------------------------side bar---------------------------- */
+.side-bar{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 200px;
+    height: 100vh;
+    padding-top: 3rem;
+    background-color: #171717;
+    z-index: 98;
+}
+.side-bar-forSmallWidth{
+    position: absolute;
+    display: block;
+}
+.user-profile{
+    margin-right: 0.2em;
+    height: 4em;
+    border: 1px solid white;
+}
+.side-bar-content{
+    margin-top: 3em;
+}
+.side-bar-content a{
+    margin-left: 0.2em;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    width: 98.3%;
+    padding: 1.5em 0em;
+}
+.side-bar li a img{
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 18px;
+}
+
+@media (max-width: 700px){
+    .hamburger-menu{
+        display: block;
+    }
+}

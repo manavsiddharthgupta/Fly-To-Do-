@@ -1,106 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;  
-}
-img {   
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
- }
-  /* Navigation bar */
-.navigation-bar{
-    width: 100%;
-    height: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0em 1em;
-    background-color: #171717;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 99;
-}
-.nav-bar-content{
-    color: white;
-    font-size: 0.9rem;
-    padding-top: 0.45rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    margin-left: 2em;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-}
-/* ------------------------------------------------------ */
-/* .content{
-    display: inline-block;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    height: 100%;
-    padding: 0.8em 1em 0em 1em;
-    margin-left: 0.5em;
-    letter-spacing: 1px;
-    position: relative;
-    transition: background-color 0.3s ease-in-out;
-}
-.content:hover{
-    background-color: rgba(0, 0, 0, 0.527);
-    border-bottom: 2px solid whitesmoke;
-} */
-/* ------------------------------------------------------- */
-.logo-img{
-    height: 100%;
-}
-/* -----------------------Main Box-------------------------------------- */
-.main-box{
-    position: relative;
-}
 /* ----------------------------------side bar---------------------------- */
-.side-bar{
-    position: fixed;
-    top:0%;
-    left: 0%;
-    width: 170px;
-    height: 100vh;
-    padding-top: 3rem;
-    background-color: #171717;
-    z-index: 98;
-}
-.user-profile{
-    margin-right: 0.2em;
-    height: 4em;
-    border: 1px solid white;
-}
-.side-bar-content{
-    margin-top: 3em;
-}
-.side-bar-content a{
-    margin-left: 0.2em;
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    width: 98.3%;
-    padding: 1.5em 0em;
-}
+
 .side-bar-content a:hover{
     background-color: rgba(255, 255, 255, 0.075);
     border-top-left-radius: 20px;
@@ -125,21 +25,22 @@ img {
 /* --------------------------------------------My day-------------------------------------------------- */
 .my-day{
     height: 100vh;
-    background: url(https://images.pexels.com/photos/1169494/pexels-photo-1169494.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-color: #171716fb;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-left: 170px;
+    margin-left: 200px;
 }
 .titleofpage{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,0%);
     width: 80%;
     height: 2em;
     display: flex;
+    align-items: center;
 }
 .titlepagelogo{
     width: 1.6rem;
@@ -148,11 +49,14 @@ img {
     align-self: center;
 }
 .titleofpage h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
     align-self: flex-start;
+    height: 100%;
     color: #32CBF1;
+    padding-top: 3px;
 }
 .my-day-content{
     max-width: 300px;
@@ -250,11 +154,11 @@ input:hover{
 }
 .all-to-do-list{
     position: absolute;
-    top: 16%;
+    top: 17%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-height: 25em;
+    max-height: 69%;
     overflow-y: scroll;
 }
 .all-to-do-list::-webkit-scrollbar{
@@ -312,4 +216,56 @@ input:hover{
     margin-bottom: 0.4em;
     border-radius: 20px;
     color: white;
+}
+
+
+.selectBackgroundImage{
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    /* background-image: url(./images/icons8-ellipsis-60.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    position: absolute;
+    top: 10%;
+    right: 8%;
+}
+.theme{
+    display: none;
+}
+.backGroundImage{
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    border: 1px solid #32CBF1;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #171716fb;
+    padding: 3px;
+}
+.backGroundImage .themeImg{
+    flex: 0 0 33.3333%;
+    height: 25%;
+    padding: 3px;
+}
+.themeImg img:hover{
+    border: 2px solid #32CBF1;
+}
+.themeImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+@media (max-width: 700px){
+    .side-bar{
+        display: none;
+    }
+    .my-day {
+      margin-left: 0px;
+    }
 }
