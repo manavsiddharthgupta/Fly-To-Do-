@@ -158,19 +158,7 @@ hamburgerMenu.addEventListener('click',()=>{
         sidebarforeHamburger.classList.remove("side-bar-forSmallWidth");
     }
 })
-const outerdivofallbackgroundImage = document.querySelector(".backGroundImage");
-let allimages = [];
-allimages = JSON.parse(localStorage.getItem('allbacgrounImages'));
-console.log(allimages);
-allimages.forEach((image)=>{
-    const outerele = document.createElement("div");
 
-    const ele = `<img class="themeImg" src=${image} alt="">`;
-    outerele.innerHTML = ele;
-    outerdivofallbackgroundImage.append(outerele);
-})
-
-console.log(outerdivofallbackgroundImage);
 
 const tochangeBackground = document.querySelector(".my-day");
 const imagefromLocalStorage = JSON.parse(localStorage.getItem('backgroundImage'));
