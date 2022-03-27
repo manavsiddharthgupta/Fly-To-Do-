@@ -155,4 +155,9 @@
     .notes {
       margin-left: 0px;
     }
-  }
+}
+@media (max-width: 535px){
+    .Notes-app{
+        justify-content: center;
+    }
+}

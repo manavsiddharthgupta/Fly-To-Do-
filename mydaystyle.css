@@ -218,7 +218,6 @@ input:hover{
     color: white;
 }
 
-
 .selectBackgroundImage{
     display: inline-block;
     cursor: pointer;
@@ -248,15 +247,15 @@ input:hover{
     background-color: #171716fb;
     padding: 3px;
 }
-.backGroundImage .themeImg{
+.backGroundImage div{
     flex: 0 0 33.3333%;
     height: 25%;
     padding: 3px;
 }
-.themeImg img:hover{
+.themeImg:hover{
     border: 2px solid #32CBF1;
 }
-.themeImg img{
+.themeImg{
     width: 100%;
     height: 100%;
     border-radius: 4px;
