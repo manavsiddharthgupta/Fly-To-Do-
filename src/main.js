@@ -152,14 +152,13 @@ hamburgerMenu.addEventListener('click',()=>{
         hamimg.classList.remove("closed");
         hamimg.src = "./images/icons8-close.svg";
         sidebarforeHamburger.classList.add("side-bar-forSmallWidth");
-        console.log(sidebarforeHamburger.classList);
     } else {
         hamimg.classList.add("closed");
         hamimg.src = "./images/icons8-hamburger-menu (1).svg";
         sidebarforeHamburger.classList.remove("side-bar-forSmallWidth");
-        console.log(sidebarforeHamburger.classList);
     }
 })
+
 
 const tochangeBackground = document.querySelector(".my-day");
 const imagefromLocalStorage = JSON.parse(localStorage.getItem('backgroundImage'));
@@ -167,7 +166,6 @@ tochangeBackground.style.backgroundImage = "url("+imagefromLocalStorage+")"
 const sett = document.querySelector(".selectBackgroundImage");
 sett.addEventListener('click',(e)=>{
     e.preventDefault()
-    console.log("clicked");
     if(e.target.classList.contains("closed")){
         themechoosing.style.display = "block";
         e.target.classList.remove("closed");

@@ -41,7 +41,8 @@ notes_app.addEventListener('click',(e)=>{
 notes_app.addEventListener('dblclick',(e)=>{
     e.preventDefault();
     if(e.target.classList.contains("sticky-notes")){
-        const doDelete = confirm("Do you want to delete your notes");
+        const str = "Do you want to delete your notes";
+        const doDelete = confirm(str);
         if (doDelete) {
             e.target.remove();
             if (notes_app.childElementCount < 2) {
@@ -86,12 +87,12 @@ hamburgerMenu.addEventListener('click',()=>{
     const hamimg = hamburgerMenu.childNodes[1];
     if(hamimg.classList.contains("closed")){
         hamimg.classList.remove("closed");
-        hamimg.src = "http://127.0.0.1:5500/Fly%20-to%20do%20list/images/icons8-close.svg";
+        hamimg.src = "./images/icons8-close.svg";
         sidebarforeHamburger.classList.add("side-bar-forSmallWidth");
         console.log(sidebarforeHamburger.classList);
     } else {
         hamimg.classList.add("closed");
-        hamimg.src = "http://127.0.0.1:5500/Fly%20-to%20do%20list/images/icons8-hamburger-menu%20(1).svg";
+        hamimg.src = "./images/icons8-hamburger-menu (1).svg";
         sidebarforeHamburger.classList.remove("side-bar-forSmallWidth");
         console.log(sidebarforeHamburger.classList);
     }

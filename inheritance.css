@@ -120,3 +120,9 @@ img.logo-gif {
         display: block;
     }
 }
+
+@media (max-width: 482px){
+    .side-bar-content .calender{
+        display: none;
+    }
+}
